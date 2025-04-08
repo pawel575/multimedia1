@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+<RadioGroup
+    android:id="@+id/radiogrupa1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/utwor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music 1" />
+
+    <RadioButton
+        android:id="@+id/utwor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music 2"
+        android:checked="true"/>
+</RadioGroup>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="30dp">
+
+    <ImageButton
+        android:layout_width="220px"
+        android:layout_height="200px"
+        android:background="@android:color/transparent"
+        android:onClick="Play"
+        android:src="@drawable/play2"
+        tools:ignore="PxUsage,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:layout_width="220px"
+        android:layout_height="200px"
+        android:background="@android:color/transparent"
+        android:onClick="Stop"
+        android:src="@drawable/stop2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:layout_width="220px"
+        android:layout_height="200px"
+        android:background="@android:color/transparent"
+        android:onClick="Pauza"
+        android:src="@drawable/pause2"
+        tools:ignore="SpeakableTextPresentCheck" />
+</LinearLayout>
+    </LinearLayout>
